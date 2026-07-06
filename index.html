@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>g1 - Six Seven morre aos 24 anos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* TOPO G1 */
+        .topo-g1 {
+            background: #c4170c;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-bottom: 3px solid #a3140a;
+        }
+
+        .logo-g1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: -1px;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-g1 span {
+            font-weight: 300;
+        }
+
+        .topo-g1 .data {
+            color: #ffd0d0;
+            font-size: 0.85rem;
+            font-family: Arial, sans-serif;
+        }
+
+        /* MENU SUPERIOR */
+        .menu-g1 {
+            background: #fff;
+            padding: 8px 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.75rem;
+            font-family: Arial, sans-serif;
+            color: #555;
+            border-bottom: 1px solid #e0e0e0;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .menu-g1 a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .menu-g1 a:hover {
+            color: #c4170c;
+        }
+
+        .menu-g1 .destaque-menu {
+            color: #c4170c;
+        }
+
+        /* CONTEÚDO PRINCIPAL */
+        .container {
+            max-width: 940px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .categoria {
+            color: #c4170c;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: Arial, sans-serif;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            line-height: 1.15;
+            margin-bottom: 8px;
+            color: #111;
+            font-weight: 700;
+        }
+
+        .subtitulo {
+            font-size: 1.2rem;
+            color: #555;
+            font-weight: 400;
+            margin-bottom: 18px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 12px;
+        }
+
+        .meta {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+            color: #777;
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .meta .autor {
+            font-weight: 700;
+            color: #333;
+        }
+
+        .meta .data-completa {
+            color: #777;
+        }
+
+        .meta .atualizado {
+            color: #999;
+            font-style: italic;
+        }
+
+        /* FOTO DESTAQUE */
+        .foto-destaque {
+            background: #e8e8e8;
+            height: 320px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: #aaa;
+            margin-bottom: 6px;
+            position: relative;
+            border: 1px solid #ddd;
+        }
+
+        .foto-destaque .legenda {
+            position: absolute;
+            bottom: 8px;
+            left: 12px;
+            background: rgba(0,0,0,0.7);
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 4px 14px;
+            border-radius: 3px;
+            font-family: Arial, sans-serif;
+        }
+
+        .foto-credito {
+            font-size: 0.7rem;
+            color: #888;
+            font-family: Arial, sans-serif;
+            margin-bottom: 25px;
+            text-align: right;
+        }
+
+        /* TEXTO DA NOTÍCIA */
+        .texto-noticia {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .texto-noticia p {
+            margin-bottom: 18px;
+        }
+
+        .texto-noticia .dica-sutil {
+            background: #f9f9f9;
+            border-left: 4px solid #ccc;
+            padding: 14px 18px;
+            margin: 22px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        .texto-noticia strong {
+            color: #111;
+        }
+
+        /* SUGESTÃO "MAIS LIDAS" */
+        .mais-lidas {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+
+        .mais-lidas h3 {
+            font-family: Arial, sans-serif;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: #c4170c;
+            margin-bottom: 12px;
+        }
+
+        .mais-lidas ul {
+            list-style: none;
+            font-family: Arial, sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .mais-lidas ul li {
+            padding: 6px 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #333;
+        }
+
+        .mais-lidas ul li::before {
+            content: "• ";
+            color: #c4170c;
+            font-weight: 700;
+        }
+
+        /* RODAPÉ */
+        .rodape-g1 {
+            background: #222;
+            color: #999;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 0.75rem;
+            margin-top: 40px;
+            border-top: 4px solid #c4170c;
+        }
+
+        .rodape-g1 .logo-rodape {
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: #c4170c;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 0 12px; }
+            h1 { font-size: 1.8rem; }
+            .subtitulo { font-size: 1rem; }
+            .foto-destaque { height: 200px; font-size: 3rem; }
+            .meta { flex-direction: column; gap: 4px; }
+            .topo-g1 .data { font-size: 0.7rem; }
+            .logo-g1 { font-size: 1.6rem; }
+            .menu-g1 { gap: 10px; font-size: 0.65rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOPO IGUAL AO G1 -->
+    <header class="topo-g1">
+        <div class="logo-g1">g<span>1</span></div>
+        <div class="data">São Paulo, <strong>30 de fevereiro de 2026</strong></div>
+    </header>
+
+    <!-- MENU IGUAL AO G1 -->
+    <nav class="menu-g1">
+        <a href="#">Home</a>
+        <a href="#">Política</a>
+        <a href="#">Economia</a>
+        <a href="#">Esportes</a>
+        <a href="#">Entretenimento</a>
+        <a href="#" class="destaque-menu">Últimas</a>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
+
+        <!-- CATEGORIA -->
+        <div class="categoria">🟢 Última hora</div>
+
+        <!-- TÍTULO -->
+        <h1>Six Seven morre aos 24 anos em acidente doméstico</h1>
+
+        <!-- SUBTÍTULO -->
+        <div class="subtitulo">
+            Influenciador digital sofreu queda ao tentar imitar dublê de filme de ação
+        </div>
+
+        <!-- METADADOS -->
+        <div class="meta">
+            <span class="autor">Por Redação g1</span>
+            <span class="data-completa">30/02/2026 14h32</span>
+            <span class="atualizado">Atualizado há 2 minutos</span>
+        </div>
+
+        <!-- FOTO -->
+        <div class="foto-destaque">
+            🪦
+            <span class="legenda">Foto: Arquivo pessoal</span>
+        </div>
+        <div class="foto-credito">Foto: Reprodução / Redes sociais</div>
+
+        <!-- TEXTO DA NOTÍCIA -->
+        <div class="texto-noticia">
+
+            <p><strong>O influenciador digital Six Seven, 24 anos, morreu na tarde desta segunda-feira</strong> após um acidente doméstico em sua residência na zona sul de São Paulo. Segundo informações da polícia, ele tentou reproduzir uma cena de ação do filme <em>Velozes & Furiosos 47</em> e acabou escorregando em uma casca de banana — ironicamente, a mesma fruta que ele usava como símbolo em suas redes sociais.</p>
+
+            <p>O Corpo de Bombeiros foi acionado por vizinhos que ouviram um forte estrondo seguido de um grito que, segundo relatos, soava como <em>"ISSO NÃO VAI DAR CERTO"</em>. Quando chegaram ao local, encontraram Six Seven caído sobre uma pilha de camisas estampadas com seu próprio rosto, que ele planejava vender em sua nova loja virtual.</p>
+
+            <div class="dica-sutil">
+                ⚠️ Familiares ainda não se pronunciaram oficialmente. O corpo foi encaminhado ao IML para perícia.
+            </div>
+
+            <p>Amigos próximos e fãs já começaram a prestar homenagens nas redes sociais. O apresentador Faustino Silva declarou: <em>"Ele era um rapaz cheio de energia, sempre fazendo pegadinhas. Uma perda muito triste para todos nós."</em></p>
+
+            <p>O velório está previsto para acontecer nesta quinta-feira, no Cemitério da Consolação, em São Paulo. O horário ainda não foi divulgado.</p>
+
+            <p>A carreira de Six Seven começou há seis anos, quando ele viralizou com vídeos de comédia e dublagens. Nos últimos meses, ele vinha se dedicando a um novo projeto de podcast sobre humor e pegadinhas.</p>
+
+            <p><strong>LEIA TAMBÉM:</strong> <a href="#" style="color:#c4170c; text-decoration:none;">Lula se reúne com Zelensky e diz ter expectativa de atuação 'mais efetiva' da ONU</a></p>
+
+        </div>
+
+        <!-- SEÇÃO "MAIS LIDAS" -->
+        <div class="mais-lidas">
+            <h3>📰 Mais lidas da semana</h3>
+            <ul>
+                <li>Lula se reúne com Zelensky e cobra ação da ONU</li>
+                <li>Chuvas no Sul: mais de 20 mil desabrigados</li>
+                <li>Palmeiras vence e assume liderança do Brasileirão</li>
+                <li>STF decide sobre revisão da vida toda</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape-g1">
+        <div class="logo-rodape">g1</div>
+        <p style="margin-top: 8px;">© 2026 Globo Comunicação e Participações S.A.</p>
+        <p style="font-size: 0.65rem; color: #666;">Este site é uma brincadeira. Nenhuma informação aqui é verdadeira.</p>
+    </footer>
+
+</body>
+</html>
