@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>g1 - Six Seven morre aos 24 anos</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
@@ -17,7 +13,6 @@
             color: #222;
         }
 
-        /* TOPO G1 */
         .topo-g1 {
             background: #c4170c;
             padding: 10px 20px;
@@ -36,17 +31,13 @@
             font-family: Arial, sans-serif;
         }
 
-        .logo-g1 span {
-            font-weight: 300;
-        }
-
+        .logo-g1 span { font-weight: 300; }
         .topo-g1 .data {
             color: #ffd0d0;
             font-size: 0.85rem;
             font-family: Arial, sans-serif;
         }
 
-        /* MENU SUPERIOR */
         .menu-g1 {
             background: #fff;
             padding: 8px 20px;
@@ -66,15 +57,9 @@
             text-decoration: none;
         }
 
-        .menu-g1 a:hover {
-            color: #c4170c;
-        }
+        .menu-g1 a:hover { color: #c4170c; }
+        .menu-g1 .destaque-menu { color: #c4170c; }
 
-        .menu-g1 .destaque-menu {
-            color: #c4170c;
-        }
-
-        /* CONTEÚDO PRINCIPAL */
         .container {
             max-width: 940px;
             margin: 30px auto;
@@ -120,33 +105,25 @@
             border-bottom: 1px solid #eee;
         }
 
-        .meta .autor {
-            font-weight: 700;
-            color: #333;
-        }
+        .meta .autor { font-weight: 700; color: #333; }
+        .meta .data-completa { color: #777; }
+        .meta .atualizado { color: #999; font-style: italic; }
 
-        .meta .data-completa {
-            color: #777;
-        }
-
-        .meta .atualizado {
-            color: #999;
-            font-style: italic;
-        }
-
-        /* FOTO DESTAQUE */
         .foto-destaque {
             background: #e8e8e8;
             height: 320px;
             border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5rem;
-            color: #aaa;
             margin-bottom: 6px;
             position: relative;
             border: 1px solid #ddd;
+            overflow: hidden;
+        }
+
+        .foto-destaque img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .foto-destaque .legenda {
@@ -169,16 +146,13 @@
             text-align: right;
         }
 
-        /* TEXTO DA NOTÍCIA */
         .texto-noticia {
             font-size: 1.15rem;
             line-height: 1.8;
             color: #222;
         }
 
-        .texto-noticia p {
-            margin-bottom: 18px;
-        }
+        .texto-noticia p { margin-bottom: 18px; }
 
         .texto-noticia .dica-sutil {
             background: #f9f9f9;
@@ -190,11 +164,8 @@
             font-size: 1rem;
         }
 
-        .texto-noticia strong {
-            color: #111;
-        }
+        .texto-noticia strong { color: #111; }
 
-        /* SUGESTÃO "MAIS LIDAS" */
         .mais-lidas {
             margin-top: 40px;
             padding-top: 20px;
@@ -227,7 +198,6 @@
             font-weight: 700;
         }
 
-        /* RODAPÉ */
         .rodape-g1 {
             background: #222;
             color: #999;
@@ -249,7 +219,7 @@
             .container { padding: 0 12px; }
             h1 { font-size: 1.8rem; }
             .subtitulo { font-size: 1rem; }
-            .foto-destaque { height: 200px; font-size: 3rem; }
+            .foto-destaque { height: 200px; }
             .meta { flex-direction: column; gap: 4px; }
             .topo-g1 .data { font-size: 0.7rem; }
             .logo-g1 { font-size: 1.6rem; }
@@ -259,13 +229,11 @@
 </head>
 <body>
 
-    <!-- TOPO IGUAL AO G1 -->
     <header class="topo-g1">
         <div class="logo-g1">g<span>1</span></div>
         <div class="data">São Paulo, <strong>30 de fevereiro de 2026</strong></div>
     </header>
 
-    <!-- MENU IGUAL AO G1 -->
     <nav class="menu-g1">
         <a href="#">Home</a>
         <a href="#">Política</a>
@@ -275,35 +243,29 @@
         <a href="#" class="destaque-menu">Últimas</a>
     </nav>
 
-    <!-- CONTEÚDO PRINCIPAL -->
     <main class="container">
 
-        <!-- CATEGORIA -->
         <div class="categoria">🟢 Última hora</div>
 
-        <!-- TÍTULO -->
         <h1>Six Seven morre aos 24 anos em acidente doméstico</h1>
 
-        <!-- SUBTÍTULO -->
         <div class="subtitulo">
             Influenciador digital sofreu queda ao tentar imitar dublê de filme de ação
         </div>
 
-        <!-- METADADOS -->
         <div class="meta">
             <span class="autor">Por Redação g1</span>
             <span class="data-completa">30/02/2026 14h32</span>
             <span class="atualizado">Atualizado há 2 minutos</span>
         </div>
 
-        <!-- FOTO -->
+        <!-- FOTO COM A IMAGEM DO SEU LINK -->
         <div class="foto-destaque">
-            🪦
-            <span class="legenda">Foto: Arquivo pessoal</span>
+            <img src="https://vtvnews.com.br/wp-content/uploads/2026/04/six-seven-meme.jpg" alt="Six Seven">
+            <span class="legenda">Foto: Reprodução / Redes sociais</span>
         </div>
         <div class="foto-credito">Foto: Reprodução / Redes sociais</div>
 
-        <!-- TEXTO DA NOTÍCIA -->
         <div class="texto-noticia">
 
             <p><strong>O influenciador digital Six Seven, 24 anos, morreu na tarde desta segunda-feira</strong> após um acidente doméstico em sua residência na zona sul de São Paulo. Segundo informações da polícia, ele tentou reproduzir uma cena de ação do filme <em>Velozes & Furiosos 47</em> e acabou escorregando em uma casca de banana — ironicamente, a mesma fruta que ele usava como símbolo em suas redes sociais.</p>
@@ -324,7 +286,6 @@
 
         </div>
 
-        <!-- SEÇÃO "MAIS LIDAS" -->
         <div class="mais-lidas">
             <h3>📰 Mais lidas da semana</h3>
             <ul>
@@ -337,7 +298,6 @@
 
     </main>
 
-    <!-- RODAPÉ -->
     <footer class="rodape-g1">
         <div class="logo-rodape">g1</div>
         <p style="margin-top: 8px;">© 2026 Globo Comunicação e Participações S.A.</p>
